@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)http://getbootstrap.com/2.3.2/examples/hero.html -->
+<html lang="en"><head>
+   
+    <title>ScholarC Home</title>
+  
+<link rel="shortcut icon" href="piggy.png" type="image/png" >
+<link rel="shortcut icon" href="{{ url_for('static', filename='piggy.png') }}">
+    <!-- Le styles -->
+    <link href="http://getbootstrap.com/2.3.2/assets/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    <link href="http://getbootstrap.com/2.3.2/assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+<style type="text/css">
+
+
+#conA {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+   /* Set the fixed height of the footer here */
+      #push,
+      #footer {
+        height: 60px;
+      }
+      #footer {
+        background-color: #f5f5f5;
+      }
+
+      /* Lastly, apply responsive CSS fixes as necessary */
+      @media (max-width: 767px) {
+        #footer {
+          margin-left: -20px;
+          margin-right: -20px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+</style>
+                                
+  </head>
+
+  <body style="overflow:hidden;">
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="/" style="color: white">Scholar<span style="color:#FF69B4">C</span></a>
+          <div class="nav-collapse collapse" style="float:right">
+            <ul class="nav">
+              <li class="active"><a href="/">Home</a></li>
+              <!--style="color:#FF69B4"-->
+             <li><a href="/about" >About</a></li>
+              <li><a href="mailto:abirshukla@gmail.com">Contact</a></li>
+                  <li><a href="https://github.com/abir123" target="_blank">Github</a></li>
+            </ul>
+           
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="container">
+        <h2>Scholar<span style="color:#FF69B4">C</span></h2>
+        <hr>
+       <form action="." method="POST">
+           <!--  <input type="text" name="text" placeholder="Enter URL (Search Query Coming Soon!)" style="width:50%">
+
+            <br/> 
+               <a data-toggle="modal" href="#URL">URL or Search Query?</a><br/>
+               <input type="submit" style="visibility: hidden;"/>
+        </form>-->
+       
+          <p>Ethnicity:  <select name="ethnicity">
+<option value="Hispanic">Hispanic</option>
+<option value="African">African American</option>
+<option value="Asian">Asian</option>
+<option value="Cocasian">Cocasian</option>
+<option value="Native">Native American</option>
+
+</select></p>
+
+<br/>
+  <p>Grade Level:  <select name="grade">
+<option value="high school students in">High School</option><!--
+<option value="10th grade high school student in">10th high school</option>
+<option value="11th grade high school student in">11th high school</option>
+<option value="12th grade high school student in">12th Hish School</option>
+<option value="9th grade high school student in">College Freshman</option>
+<option value="collegeSoph">College Sophomore</option>
+<option value="collegeJ">College Junior</option>-->
+<option value="college students in">College</option>
+
+</select></p><br/>
+  <p>Interested in:  <select name="major">
+<option value="art">Art</option>
+<option value="engineering">Engineering</option>
+<option value="computer science">Computer Science</option>
+<option value="biology">Biology</option>
+<option value="chemistry">Chemistry</option>
+<option value="physics">Physics</option>
+<option value="english">English</option>
+<option value="math">Math</option>
+<option value="medicine">Medicine</option>
+<option value="business">Business</option>
+<option value="sports">Sports</option>
+
+</select></p><br/>
+<p> Gender: <input type="radio" name="gender" value="male" checked>  Male
+
+<input type="radio" name="gender" value="female">  Female
+<input type="radio" name="gender" value="">  Other
+</p><br/>
+      <p>Location:  <input type="text" name="location" placeholder="Enter Location Here" style="width:50%"></p>
+        <br/>
+        <input type="submit" name="my-form" value="Find Me Scholarship"/>
+
+    </form><!--
+<a href="/lucky"><button>I'm Feeling Luck</button></a>-->
+
+    </div> <!-- /container -->
+<p><br/><br/>
+   <div id="footer">
+      <div class="container"><br/>
+        <p class="muted credit">Developed By: <a href="/about" style="color:#FF69B4">Abir Shukla</a></p>
+
+      </div>
+    </div>
+
+    
+     
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+  
+
+</body></html>
